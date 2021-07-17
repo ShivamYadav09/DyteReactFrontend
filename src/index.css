@@ -1,0 +1,64 @@
+body{
+  margin:0;
+  box-sizing:border-box;
+}
+
+.explorer{
+  float:left;
+  width:10%;
+  padding-top:30px;
+  background-color:#263238;
+  height:95vh;
+}
+
+.explorer button{
+  padding:10px 10px;
+  margin:10px;
+  font-size: 16px;
+  cursor:pointer;
+  background-color:#5f7c8a;
+  width:150px;
+  border:oldlace;
+  border-radius: 20px;
+}
+
+.para{
+  font-size:25px;
+  font-family: Helvetica;
+  color: rgb(15, 15, 15);
+  text-align:center;
+  background-color:paleturquoise;
+  margin-bottom: 30px;
+}
+.pane{
+  float:left;
+  width:40%;
+  padding: 0 10px;
+  height:27vh;
+}
+
+.editor-container .CodeMirror{
+  height:26vh;
+}
+
+.editor-title{
+  justify-content: space-between;
+  background-color: hsl(225, 6%, 13%);
+  color: #fff;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  padding:10px;
+}
+
+.editor-container {
+  padding: .5rem;
+  background-color: hsl(225, 6%, 25%);
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  overflow: hidden !important;
+}
